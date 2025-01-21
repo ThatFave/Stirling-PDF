@@ -41,8 +41,20 @@ See https://github.com/adobe-type-tools/cmap-resources
     <link rel="stylesheet" th:href="@{'/pdfjs-legacy/css/viewer.css'}">
     <script th:src="@{'/pdfjs-legacy/js/viewer.mjs'}" type="module"></script>
   </head>
-
   <body tabindex="1">
+  	<!-- ncsedt-implement:before -->
+		<div id="ncsedt-implement">
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TheNocoder/ncSimpleHtmlEditor@master/ncsimplehtmleditor.css">
+    	<script src="https://cdn.jsdelivr.net/gh/TheNocoder/ncSimpleHtmlEditor@master/ncsimplehtmleditor.js"></script>
+    	<script>
+        window.addEventListener('DOMContentLoaded', function () {
+          var editor = new ncSimpleHtmlEditor();
+          editor.start();
+        });
+    	</script>
+		</div>
+ 
+
     <div id="outerContainer">
 
       <div id="sidebarContainer">
